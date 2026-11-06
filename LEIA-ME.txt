@@ -1,0 +1,32 @@
+MEU FINANCEIRO — PWA
+
+Conteúdo:
+- index.html: aplicativo
+- manifest.webmanifest: configuração de instalação
+- sw.js: cache para funcionamento offline
+- ícones PNG e SVG
+
+DADOS INICIAIS CONFIGURADOS
+Salário: R$ 1.200,00
+Limite mensal: R$ 650,00
+Fatura acumulada inicial: R$ 508,21
+Fechamento: dia 27
+Vencimento: dia 08
+
+COMO PUBLICAR E INSTALAR
+1. Publique todos os arquivos desta pasta em um serviço de hospedagem estática com HTTPS.
+   Exemplos: GitHub Pages, Netlify ou Cloudflare Pages.
+2. Abra o endereço publicado no Safari do iPhone.
+3. Toque em Compartilhar > Adicionar à Tela de Início.
+4. Abra pelo ícone criado. Depois da primeira carga, os arquivos principais ficam em cache para uso offline.
+
+ARMAZENAMENTO E BACKUP
+- Os lançamentos ficam no armazenamento local do navegador (localStorage).
+- Use Configurações > Exportar backup (.json) regularmente.
+- Para restaurar: Configurações > Importar backup.
+- CSV exporta os lançamentos para planilha.
+- Limpar dados do site/navegador pode apagar os dados locais. O backup JSON é importante.
+
+OBSERVAÇÃO
+Esta versão inicial usa um saldo de abertura de R$ 508,21 como lançamento-base em novembro de 2026. Não registre o pagamento da fatura como gasto novamente.
+O controle é um organizador pessoal, não consulta automaticamente o banco ou a operadora do cartão.
