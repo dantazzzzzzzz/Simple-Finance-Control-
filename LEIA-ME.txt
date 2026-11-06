@@ -1,32 +1,28 @@
-MEU FINANCEIRO — PWA
+MEU FINANCEIRO — versão com controle mensal e de faturas
 
-Conteúdo:
-- index.html: aplicativo
-- manifest.webmanifest: configuração de instalação
-- sw.js: cache para funcionamento offline
-- ícones PNG e SVG
+ATUALIZAÇÃO
+1. No GitHub, abra o mesmo repositório do site.
+2. Use Add file > Upload files.
+3. Envie e substitua index.html e sw.js.
+4. Faça Commit changes.
+5. Aguarde o GitHub Pages publicar. No iPhone, feche a aba do site e abra novamente. Se a versão antiga continuar aparecendo, atualize a página ou feche e reabra o Safari.
 
-DADOS INICIAIS CONFIGURADOS
-Salário: R$ 1.200,00
-Limite mensal: R$ 650,00
-Fatura acumulada inicial: R$ 508,21
-Fechamento: dia 27
-Vencimento: dia 08
+O QUE MUDOU
+- Gastos do mês são calculados pelo mês da data de cada compra.
+- O mês do painel avança automaticamente para o mês atual, sem apagar o histórico.
+- As setas ao lado do mês permitem consultar meses anteriores.
+- Faturas ficam separadas dos gastos mensais.
+- Cada compra é vinculada à fatura em aberto.
+- Ao marcar a fatura como paga, o saldo da fatura fica quitado; as compras permanecem no histórico e continuam contabilizadas no mês em que ocorreram.
+- Depois de quitar uma fatura, as próximas compras passam a compor uma nova fatura.
+- O histórico de faturas mostra as faturas pagas e pendentes.
+- Os dados antigos são migrados automaticamente: a fatura inicial de R$ 508,21 permanece vinculada ao lançamento inicial e em aberto.
 
-COMO PUBLICAR E INSTALAR
-1. Publique todos os arquivos desta pasta em um serviço de hospedagem estática com HTTPS.
-   Exemplos: GitHub Pages, Netlify ou Cloudflare Pages.
-2. Abra o endereço publicado no Safari do iPhone.
-3. Toque em Compartilhar > Adicionar à Tela de Início.
-4. Abra pelo ícone criado. Depois da primeira carga, os arquivos principais ficam em cache para uso offline.
+IMPORTANTE
+- Faça backup em Configurações antes de atualizar.
+- O armazenamento continua local no navegador do iPhone (localStorage), sem sincronização entre dispositivos.
+- O pagamento da fatura é um registro de quitação, não uma nova despesa.
+- O aplicativo não se conecta automaticamente ao banco ou ao cartão; o pagamento deve ser marcado manualmente.
 
-ARMAZENAMENTO E BACKUP
-- Os lançamentos ficam no armazenamento local do navegador (localStorage).
-- Use Configurações > Exportar backup (.json) regularmente.
-- Para restaurar: Configurações > Importar backup.
-- CSV exporta os lançamentos para planilha.
-- Limpar dados do site/navegador pode apagar os dados locais. O backup JSON é importante.
-
-OBSERVAÇÃO
-Esta versão inicial usa um saldo de abertura de R$ 508,21 como lançamento-base em novembro de 2026. Não registre o pagamento da fatura como gasto novamente.
-O controle é um organizador pessoal, não consulta automaticamente o banco ou a operadora do cartão.
+ATUALIZAÇÃO VISUAL
+- A visão geral agora exibe somente os cartões Salário mensal e Meta potencial de investimento nessa área de indicadores. Os detalhes de gastos e faturas continuam disponíveis nas seções próprias.
